@@ -9,6 +9,16 @@ public class Kadai02 {
 	 * @return s‚Ì’†‚É“ü‚Á‚Ä‚¢‚½c‚Ì•¶Žš”
 	 */
 	int countString(String s,char c) {
-		return -1;
+
+		if(s == null) {
+		return 0;
+		}
+		int count = 0;
+	for(int i = 0;s.length()>i;i++) {
+		if(s.charAt(s.length()-i-1)==c) {
+			count++;
+		}
+	}
+		return count;
 	}
 }

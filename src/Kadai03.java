@@ -9,6 +9,9 @@ public class Kadai03 {
 	 */
 	char[] CharacterList(String s) {
 		char[] c = new char[26];
+
+
+
 		return c;
 	}
 }

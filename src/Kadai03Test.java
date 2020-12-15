@@ -9,8 +9,8 @@ class Kadai03Test {
 		Kadai03 k = new Kadai03();
 		String t1 = "apple";
 		assertArrayEquals(new char[] {'A','E','L','P'},k.CharacterList(t1));
-		String t2 = "ApLlE";
-		assertArrayEquals(new char[] {'A','E','L','P'},k.CharacterList(t2));
+		String t2 = "ApLlEslY";
+		assertArrayEquals(new char[] {'A','E','L','P','S','Y'},k.CharacterList(t2));
 		String t3 = null;
 		assertArrayEquals(null,k.CharacterList(t3));
 		String t4 = "  ";

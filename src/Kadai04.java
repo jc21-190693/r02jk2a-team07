@@ -8,7 +8,31 @@ public class Kadai04 {
 	 * @return sの中に入っていた文字
 	 */
 	char getMaxString(String s) {
-		char c = ' ';
+		char c=' ';
+		s.toUpperCase();
+		int[] a =new int[26];
+
+		for(int i=0;i<s.length();i++) {
+			for(int w=0;w<26;w++) {
+				if(s.charAt(i)=='a'+w) {
+					a[w] ++;
+				}
+				if(s.charAt(i)=='A'+w) {
+					a[w] ++;
+				}
+
+			}
+
+		}
+		int max =0;
+		int soeji=0;
+		for(int i=0;i<26;i++) {
+			if(max<a[i]) {
+				max=a[i];
+				soeji = i;
+			}
+			c =(char) ('A'+soeji);
+		}
 		return c;
 	}
 }
